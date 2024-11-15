@@ -1,10 +1,13 @@
 
   /* Reset default margins and paddings */
-* {
-    margin: 0;
+  * {
+    margin-top: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+body{
+    margin:0px;
+}
   
   /* Body styling */
   body {
@@ -121,11 +124,7 @@
   }
   /* Dropdown container styling */
 /* Reset default margins and paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Body styling */
 body {
@@ -196,4 +195,14 @@ body {
 /* Show dropdown when clicked */
 .dropdown.show .dropdown-content {
     display: block;
+}
+
+
+
+.container{
+    display:flex;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+
 }

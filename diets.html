@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Food Categories</title>
     <link rel="stylesheet" href="./diets.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Food Explorer</h1>
+        
+            
+               <div id="logoimage"><img src="C:\Users\hp\OneDrive\Pictures\Screenshots\Screenshot 2024-11-15 231145.png" alt="Logo" width="125" height="90"></div>
+               <div class="logo">
+               <h1>Food Explorer</h1>
         </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="profile-button" onclick="toggleDropdown()"><img src="C:\Users\hp\OneDrive\Desktop\download.png" alt="profile button" width ="30" height="30"></button>
+        <div class="dropdown-content">
+            <a href="C:\Users\hp\OneDrive\Desktop\Yes_I_do_coding\Git\Cryptics\leaderboard.html">Socials</a>
+            
+          </div>
+          <script>
+            
+    function toggleDropdown() {
+      const dropdown = document.querySelector('.dropdown');
+      dropdown.classList.toggle('show');
+    }
+
+    
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content')) {
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(function(dropdown) {
+          dropdown.classList.remove('show');
+        });
+      }
+    };
+          </script>
     </header>
 
-    <div class="hero">
-        <h2>Explore Delicious Food Categories</h2>
-        <p>Find your favorite dishes and cuisines in one place.</p>
-        <a href="#categories" class="cta-button">Start Exploring</a>
-    </div>
 
-    <section id="categories">
+    <div class="hero">
         <div class="food-list">
             <ul>
                 <!-- Staple Foods Dropdown -->
@@ -114,7 +133,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </div>
+
+    
 </body>
 
 <script src="./script.js">

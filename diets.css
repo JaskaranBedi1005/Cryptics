@@ -22,16 +22,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   
   header .logo h1 {
     margin: 0;
     font-size: 36px;
+    
   }
   
   header .nav-links {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
   }
   
   header .nav-links li {
@@ -46,6 +49,24 @@
   
   header .nav-links a:hover {
     text-decoration: underline;
+  }
+
+  .profile-button {
+    position: absolute;
+    top: 0px;
+    right: 20px; /* Position the button in the top-right corner */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+
+  .profile-button:hover {
+    background-color: #d35400;
   }
   
   /* Hero Section */
@@ -133,7 +154,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    margin: 20px;
+    margin: 0px;
 }
 
 /* Dropdown container styling */
@@ -197,3 +218,10 @@ body {
 .dropdown.show .dropdown-content {
     display: block;
 }
+
+#logoimage{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+

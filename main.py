@@ -14,8 +14,8 @@ def calculateCalories():
     total_calories=0
     count=0 
     for food_item,count in data.items():
-        if count in Food:
-           total_calories += Food[food] * count
+        if food_item in Food:
+           total_calories += Food[food_item] * count
            return jsonify({'total_calories':total_calories})
         else:
              return jsonify({'Error':'Food item not found'}),400

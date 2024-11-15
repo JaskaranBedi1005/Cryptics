@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Categories</title>
+    <link rel="stylesheet" href="./diets.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Food Explorer</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="hero">
+        <h2>Explore Delicious Food Categories</h2>
+        <p>Find your favorite dishes and cuisines in one place.</p>
+        <a href="#categories" class="cta-button">Start Exploring</a>
+    </div>
+
+    <section id="categories">
+        <div class="food-list">
+            <ul>
+                <!-- Staple Foods Dropdown -->
+                <li class="food dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('staple-dropdown')">Staple Foods</button>
+                    <ul id="staple-dropdown" class="dropdown-content">
+                        <li><a href="#">Rice</a></li>
+                        <li><a href="#">Bread</a></li>
+                        <li><a href="#">Pasta</a></li>
+                    </ul>
+                </li>
+
+                <!-- Vegetarian Dishes Dropdown -->
+                <li class="food dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('vegetarian-dropdown')">Vegetarian Dishes</button>
+                    <ul id="vegetarian-dropdown" class="dropdown-content">
+                        <li><a href="#">Salad</a></li>
+                        <li><a href="#">Paneer Curry</a></li>
+                        <li><a href="#">Vegetable Stir Fry</a></li>
+                    </ul>
+                </li>
+
+                <!-- Non-vegetarian Dishes Dropdown -->
+                <li class="food dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('non-veg-dropdown')">Non-Vegetarian Dishes</button>
+                    <ul id="non-veg-dropdown" class="dropdown-content">
+                        <li><a href="#">Chicken Curry</a></li>
+                        <li><a href="#">Fish Tacos</a></li>
+                        <li><a href="#">Lamb Kebabs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Snacks and Street Foods Dropdown -->
+                <li class="food dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('snacks-dropdown')">Snacks and Street Foods</button>
+                    <ul id="snacks-dropdown" class="dropdown-content">
+                        <li><a href="#">Samosa</a></li>
+                        <li><a href="#">Chaat</a></li>
+                        <li><a href="#">Pani Puri</a></li>
+                    </ul>
+                </li>
+
+                <!-- Sweets and Desserts Dropdown -->
+                <li class="food dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('sweets-dropdown')">Sweets and Desserts</button>
+                    <ul id="sweets-dropdown" class="dropdown-content">
+                        <li><a href="#">Gulab Jamun</a></li>
+                        <li><a href="#">Ice Cream</a></li>
+                        <li><a href="#">Cake</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+<script src="./script.js">
+    
+</script>
+</html>

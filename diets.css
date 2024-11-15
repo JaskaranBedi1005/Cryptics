@@ -1,0 +1,172 @@
+
+  /* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  header .nav-links li {
+    margin-left: 20px;
+  }
+  
+  header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('fitness-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .cta-button:hover {
+    background-color: #d35400;
+  }
+  
+  /* Food Categories Section */
+  #categories {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .food-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .food-list .food {
+    background: #e67e22;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .food-list .food:hover {
+    background: #d35400;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  /* Dropdown container styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Button to trigger dropdown */
+  .dropbtn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropbtn:hover {
+    background-color: #d35400;
+  }
+  
+  /* Dropdown content hidden by default */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Set high z-index to ensure the dropdown is above other content */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .dropdown-content li {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  
+  .dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #f4f4f4;
+    color: #e67e22;
+  }
+  

@@ -22,10 +22,7 @@
     padding: 20px;
   }
   
-  header .logo h1 {
-    margin: 0;
-    font-size: 36px;
-  }
+  
   
   header .nav-links {
     list-style: none;
@@ -46,7 +43,7 @@
   /* Hero Section */
   .hero {
     background: url('fitness-image.jpg') no-repeat center center/cover;
-    color: white;
+    color: black;
     padding: 80px 0;
     text-align: center;
   }
@@ -117,14 +114,9 @@
     color: #555;
   }
   
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
   
-  footer p {
-    font-size: 16px;
+  #logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }

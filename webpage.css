@@ -20,6 +20,7 @@
     background: #333;
     color: #fff;
     padding: 20px;
+    position: relative;
   }
   
   
@@ -40,6 +41,25 @@
     font-size: 18px;
   }
   
+  .profile-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position the button in the top-right corner */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+
+  .profile-button:hover {
+    background-color: #d35400;
+  }
+
+
   /* Hero Section */
   .hero {
     background: url('fitness-image.jpg') no-repeat center center/cover;
@@ -116,6 +136,12 @@
   
   
   #logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #logoimage{
     display: flex;
     align-items: center;
     gap: 20px;
